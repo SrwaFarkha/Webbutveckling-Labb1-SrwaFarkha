@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+.btn-basic{
+    background-color: #3c6e71;
+    color: white;
+    border-radius: 2px;
+    border: 1px;
+}
 
 .background-img{
     height: 650px;
@@ -38,7 +44,7 @@ body{
 
 }
 
-ul {
+#navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
