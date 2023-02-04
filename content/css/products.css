@@ -2,23 +2,16 @@ body {
     background-color: #222;
 }
 
-.gallery {
-    width: 80%;
+.gallery-container {
+    height: auto;
     display: flex;
+    flex-wrap: wrap
 }
-
-.car {
-    border: solid 1px #444;
-    background-color: #fff;
-    padding: 3px;
-    max-width: 300px;
-}
-
-.car img {
-    cursor: pointer;
+/* 
+.car-img{
     width: 300px;
-    height: 200px;
-}
+    height: 250px;
+} */
 
 .hidden {
     display: none;
@@ -61,3 +54,5 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+

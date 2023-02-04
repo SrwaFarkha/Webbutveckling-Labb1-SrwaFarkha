@@ -8,7 +8,7 @@ const vehicles = [
         "price": 400000,
         "milage": 6500,
         "gear": "Automat",
-        "img": "audi-A6-2022.png"
+        "img": "audi-a6.webp"
         
     },
     {
@@ -20,7 +20,7 @@ const vehicles = [
         "price": 300000,
         "milage": 8580,
         "gear": "Manuell",
-        "img": "bmw-520i-2020.png"
+        "img": "bmw-520i.webp"
         
     },
     {
@@ -32,7 +32,7 @@ const vehicles = [
         "price": 350000,
         "milage": 3000,
         "gear": "Automat",
-        "img": "mercedes-benz-2022-c220.png"
+        "img": "mercedes-benz-c220-vit.webp"
         
     },
     {
@@ -44,7 +44,7 @@ const vehicles = [
         "price": 280000,
         "milage": 9500,
         "gear": "Automat",
-        "img": "Volvo-XC90-2019.png"
+        "img": "volvo-xc90-svart.webp"
         
     },
     {
@@ -56,7 +56,18 @@ const vehicles = [
         "price": 500000,
         "milage": 1500,
         "gear": "Automat",
-        "img": "mercedes-benz-e450-2023.png"
+        "img": "mercedes-benz-e450.webp"
+    },
+    {
+        "id": 6,
+        "brand": "Volvo",
+        "model": "V90",
+        "colour": "Svart",
+        "year": 2019,
+        "price": 250000,
+        "milage": 9500,
+        "gear": "Manuel",
+        "img": "volvo-V90-svart.webp"
         
     }
 ]
