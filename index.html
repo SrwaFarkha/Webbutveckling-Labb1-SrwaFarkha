@@ -17,6 +17,8 @@
              <li class="btn-nav active"><a href="index.html">Hem</a></li>
               <li class="btn-nav"><a href="products.html">Våra bilar</a></li>
              <li class="btn-nav"><a href="about-us.html">Om oss</a></li>
+            <li class="btn-nav" style="float:right"><a href="shopping-cart.html">Kundvagn</a></li>
+
          </ul> 
     </div>
   
@@ -30,6 +32,30 @@
         </div>
         
     </div>
+
+    <!-- the DIV that will contain the widget -->
+    <div class="weatherWidget"></div>
+    
+    <script>
+        window.weatherWidgetConfig = window.weatherWidgetConfig || [];
+        window.weatherWidgetConfig.push({
+            selector: ".weatherWidget",
+            apiKey: "CUJ34WXWM65ANXSFH5SE83ATU", //Sign up for your personal key
+            location: "Gothenburg, Sweden", //Enter an address
+            unitGroup: "metric", //"us" or "metric"
+            forecastDays: 5, //how many days forecast to show
+            title: "Gothenburg, Sweden", //optional title to show in the 
+            showTitle: true,
+            showConditions: true
+        });
+
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
     
 </body>
 <footer>

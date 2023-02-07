@@ -14,6 +14,9 @@ vehicles.forEach(car => {
         <div class="card-body">
             <p>${car.brand} ${car.model}</p>
         </div>
+        <div class="buy-button">
+          <a href="#" class="myButton">Köp</a>
+        </div>
     </div>`
   );
 });
@@ -32,8 +35,6 @@ const openModal = function(id) {
     <div class="card-body">
         <h5 class="card-title">${selectedCar.brand} ${selectedCar.model}</h5>
         <p class="card-text">Färg: ${selectedCar.colour} <br> År: ${selectedCar.year} <br> Pris: ${selectedCar.price}kr <br> Miltal: ${selectedCar.milage} <br> Växellåda: ${selectedCar.gear}</p>
-
-    
     
     </div>
     `;
