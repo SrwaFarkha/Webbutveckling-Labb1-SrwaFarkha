@@ -13,7 +13,7 @@
 
 .background-img{
     height: 650px;
-    width: 1000px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -73,10 +73,6 @@ li a:hover:not(.active) {
     background-color: #3c6e71;
 }
 
-
-
-
-
 .myButton {
     box-shadow: 0px 1px 0px 0px #f0f7fa;
     background: linear-gradient(to bottom, #3c6e71 5%, #3c6e71 100%);
@@ -96,6 +92,25 @@ li a:hover:not(.active) {
     left: 125px;
 }
 
+.close-checkout-modal{
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #3c6e71 5%, #3c6e71 100%);
+    background-color: #3c6e71;
+    border-radius: 6px;
+    border: 1px solid #367074;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    margin-top: 40px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #3c6e71;
+    position: relative;
+}
+
 .myButton:hover {
     background: linear-gradient(to bottom, #3c6e71 5%, #3c6e71 100%);
     background-color: #3c6e71;
@@ -104,4 +119,12 @@ li a:hover:not(.active) {
 .myButton:active {
     position: relative;
     top: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .background-img{
+        height: unset;
+        width: 300px;
+    }
 }

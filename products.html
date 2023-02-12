@@ -20,24 +20,69 @@
             <li class="btn-nav"><a href="index.html">Hem</a></li>
             <li class="btn-nav active"><a href="products.html">Våra bilar</a></li>
             <li class="btn-nav"><a href="about-us.html">Om oss</a></li>
-            <li class="btn-nav" style="float:right"><a href="shopping-cart.html">Kundvagn</a></li>
+            <li class="btn-nav" style="float:right"><a style="color: white;" onclick="openShoppingCartModal()">Visa/Updatera kundvagn</a></li>
 
         </ul>
     </div>
+    <div class="container">
+        <div class="modal-car-details hidden">
+            <button class="close-modal">&times;</button>
+            <div class="modal-container"></div>
+        </div>
+    
+        <div class="modal-shoppingCart-details hidden">
+            <div class="shoppingCart-modal-container">
+                <div class="btnContainer">
+                    <button class="close-shoppingCart-modal">&times;</button>
+                </div>
+                <table class="table" style="text-align: left;">
+                    <thead>
+                        <tr>
+                        <th scope="col">Bild</th>
+                        <th scope="col">Märke</th>
+                        <th scope="col">Modell</th>
+                        <th scope="col">Pris</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-output">
+                  
+                    </tbody>
+                </table>
+                <div class="information-box">
+                    <p style="margin-right: 10px;" id="total-product-data"></p>
+                    <p id="total-price-data"></p>
+                    <button class="myButton check-out-btn" onclick="startCheckOut()">Checka ut</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-car-details hidden">
+            <button class="close-modal">&times;</button>
+            <div class="modal-container"></div>
+        </div>
 
-    <div class="modal-car-details hidden">
-        <button class="close-modal">&times;</button>
-        <div class="modal-container"></div>
+        <div class="modal-checkout hidden">
+            <div class="modal-container">
+                <div style="display: flex; flex-direction: column;">
+                    <h4>Tack för ditt köp välkommen åter!</h4>
+                    <button class="close-checkout-modal">Stäng</button>
+                </div>
+            </div>
+        </div>
+    
+        <main>
+            <section class="gallery-container">
+            </section>
+    
+            <section class="shoppingCart-container">
+            </section>
+        </main>
+    
+        <div class="overlay hidden"></div>
     </div>
-    <main>
-        <section class="gallery-container">
-        </section>
-    </main>
 
-    <div class="overlay hidden"></div>
     <script src="./scripts/vehicles.js"></script>
     <script src="./scripts/site.js"></script>
-    <script src="./script/shopping-cart.js"></script>
 
 </body>
 
